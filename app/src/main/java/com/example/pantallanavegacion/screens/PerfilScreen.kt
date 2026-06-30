@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun PerfilScreen(
+fun PerfilScreen(                                              // Crea la pantalla Perfil
     navController: NavController
 ) {
     Column(
@@ -34,7 +34,7 @@ fun PerfilScreen(
             fontWeight = FontWeight.Bold
         )
         Button(onClick = {
-            navController.popBackStack()
+            navController.popBackStack()                           // Vuelve a la pantalla Home
         })
         {
             Text("Volver")

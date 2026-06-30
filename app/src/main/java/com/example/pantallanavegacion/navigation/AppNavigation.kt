@@ -9,15 +9,15 @@ import com.example.pantallanavegacion.screens.HomeScreen
 import com.example.pantallanavegacion.screens.PerfilScreen
 
 @Composable
-fun AppNavigation() {
-    val navController = rememberNavController()
+fun AppNavigation() {                                   // Crea el controlador de navegación
+    val navController = rememberNavController()         // Crea variable para el controlador de navegación
 
-    NavHost(
-        navController = navController,
-        startDestination = Routes.HOME
+    NavHost(                                            // Crea el host de navegación (Contiene todas las pantallas registradas)
+        navController = navController,                  // Define el controlador de navegación
+        startDestination = Routes.HOME                  // Define la pantalla inicial
     ) {
-       composable(Routes.HOME) {
-           HomeScreen(navController)
+       composable(Routes.HOME) {                        // Define la ruta de la pantalla
+           HomeScreen(navController)                    // Define la pantalla
        }
         composable(Routes.CLIENTES) {
             ClienteScreen(navController)

@@ -15,8 +15,8 @@ import androidx.navigation.NavController
 import com.example.pantallanavegacion.navigation.Routes
 
 @Composable
-fun HomeScreen(
-    navController: NavController
+fun HomeScreen(                                                 // Crea la pantalla Home
+    navController: NavController                                // Define el controlador de navegación
 ) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -30,7 +30,7 @@ fun HomeScreen(
         )
 
         Button(onClick = {
-            navController.navigate(Routes.CLIENTES)
+            navController.navigate(Routes.CLIENTES)             // Navega a la pantalla Clientes
         }) {
             Text("Ir a Clientes")
         }

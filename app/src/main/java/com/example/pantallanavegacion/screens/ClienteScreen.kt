@@ -15,7 +15,7 @@ import androidx.navigation.NavController
 import com.example.pantallanavegacion.navigation.Routes
 
 @Composable
-fun ClienteScreen(
+fun ClienteScreen(                                                  // Crea la pantalla Clientes
     navController: NavController
 ) {
     Column(
@@ -29,13 +29,13 @@ fun ClienteScreen(
             fontWeight = FontWeight.Bold
         )
         Button(onClick = {
-            navController.navigate(Routes.PERFIL)
+            navController.navigate(Routes.PERFIL)                   // Navega a la pantalla Perfil
         }
         ) {
             Text("Ir a Perfil")
         }
         Button(onClick = {
-            navController.popBackStack()
+            navController.popBackStack()                            // Vuelve a la pantalla Home
         })
         {
             Text("Volver")
